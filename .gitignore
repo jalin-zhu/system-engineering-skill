@@ -6,3 +6,7 @@ desktop.ini
 
 # installer backups
 *.bak-*/
+
+# never commit registry credentials
+.npmrc
+*.tgz
