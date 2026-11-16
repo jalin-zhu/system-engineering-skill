@@ -54,7 +54,7 @@ function Install-Into([string]$dest, [string]$Version) {
     Copy-Item (Join-Path $SrcDir 'SKILL.en.md') (Join-Path $dest 'SKILL.en.md') -Force
   }
 
-  foreach ($f in @('reference.md', 'project-wiki.md', 'README.md', 'README.zh-CN.md')) {
+  foreach ($f in @('reference.md', 'project-wiki.md', 'INSTALL.md', 'README.md', 'README.zh-CN.md')) {
     $src = Join-Path $SrcDir $f
     if (Test-Path $src) { Copy-Item $src (Join-Path $dest $f) -Force }
   }

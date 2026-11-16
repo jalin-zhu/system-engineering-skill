@@ -32,7 +32,19 @@ Wiki 是承重结构。当 Agent 和用户对「系统是什么」产生分歧�
 
 ## 安装
 
-`npx` 方式需要 Node.js ≥ 18；shell 脚本无依赖。
+最省事的方式：粘一句话，让 Agent 自己装。下面是手动方式。
+
+### 让 Agent 自己装（不用终端）
+
+把这句粘进任何能访问网络的 Agent：
+
+```
+把 https://github.com/jalin-zhu/system-engineering-skill 这个技能安装到你的技能目录。
+严格按 https://raw.githubusercontent.com/jalin-zhu/system-engineering-skill/main/INSTALL.md 执行。
+装中文版。完成后告诉我安装路径和版本。
+```
+
+Agent 会读 [INSTALL.md](INSTALL.md)，识别自己对应的技能目录，备份已有安装，拷入文件，自检后回报路径。Qoder、Claude Code 以及任何按目录加载技能的 Agent 都适用。如果它访问不了网络，规程要求它停下报告，而不是凭记忆编造文件内容。
 
 ### npx（跨平台）
 
@@ -109,6 +121,7 @@ Agent 必须找到的只有 `SKILL.md`；`reference.md` 和 `project-wiki.md` �
 | `SKILL.en.md` | 英文技能正文 |
 | `reference.md` | 测绘单模板与案例（跨端功能、重构、新增模块、新项目） |
 | `project-wiki.md` | `PROJECT_WIKI.md` 模板、写作标准、逆向补写清单、审阅格式 |
+| `INSTALL.md` | 供 Agent 执行的安装规程（聊天安装背后的那份文件） |
 | `bin/cli.mjs` | `npx` 安装器（无依赖） |
 | `scripts/install.sh` | POSIX 安装脚本 |
 | `scripts/install.ps1` | PowerShell 安装脚本 |

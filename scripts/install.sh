@@ -71,7 +71,7 @@ install_into() {
     cp "$SRC_DIR/SKILL.md" "$dest/SKILL.md"
     cp "$SRC_DIR/SKILL.en.md" "$dest/SKILL.en.md"
   fi
-  for f in reference.md project-wiki.md README.md README.zh-CN.md; do
+  for f in reference.md project-wiki.md INSTALL.md README.md README.zh-CN.md; do
     [ -f "$SRC_DIR/$f" ] && cp "$SRC_DIR/$f" "$dest/$f"
   done
   printf '{\n  "name": "%s",\n  "version": "%s",\n  "lang": "%s",\n  "installedAt": "%s"\n}\n' \

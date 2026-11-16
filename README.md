@@ -34,7 +34,19 @@ The wiki is the load-bearing part. It is the only artifact both the agent and th
 
 ## Install
 
-Requires Node.js ≥ 18 for the `npx` route; the shell scripts have no dependencies.
+Fastest route: paste one line and let the agent install it. Manual routes follow.
+
+### Ask your agent (no terminal)
+
+Paste this into any agent that can fetch URLs:
+
+```
+Install the skill at https://github.com/jalin-zhu/system-engineering-skill into your skills directory.
+Follow https://raw.githubusercontent.com/jalin-zhu/system-engineering-skill/main/INSTALL.md exactly.
+Install the Chinese version unless I asked for English.
+```
+
+The agent reads [INSTALL.md](INSTALL.md), detects its own skills root, backs up any existing install, copies the files, verifies the result, and reports the path. Works in Qoder, Claude Code, and anything else that loads a skills directory. If it cannot reach the network, the procedure tells it to stop and report rather than reconstruct file contents from memory.
 
 ### npx (any OS)
 
@@ -111,6 +123,7 @@ Then it should show the `PROJECT_WIKI.md` change and ask for approval **before**
 | `SKILL.en.md` | English skill body |
 | `reference.md` | Survey template, worked examples (cross-end feature, refactor, module addition, new project) |
 | `project-wiki.md` | `PROJECT_WIKI.md` template, writing rubric, reverse-engineering checklist, review format |
+| `INSTALL.md` | Agent-executable install procedure (the file behind the chat prompt) |
 | `bin/cli.mjs` | `npx` installer (no dependencies) |
 | `scripts/install.sh` | POSIX installer |
 | `scripts/install.ps1` | PowerShell installer |

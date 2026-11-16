@@ -15,7 +15,7 @@ const TARGETS = {
   project: (opts) => join(resolve(opts.dir || join(process.cwd(), ".qoder", "skills")), NAME),
 };
 
-const SHARED_FILES = ["reference.md", "project-wiki.md", "README.md", "README.zh-CN.md"];
+const SHARED_FILES = ["reference.md", "project-wiki.md", "INSTALL.md", "README.md", "README.zh-CN.md"];
 
 function usage() {
   console.log(`system-engineering-skill v${VERSION}
