@@ -50,6 +50,8 @@ The agent reads [INSTALL.md](INSTALL.md), detects its own skills root, backs up 
 
 ### npx (any OS)
 
+> The npm package is not published yet. Until it is, use **Ask your agent** above, or the git-clone route below.
+
 ```bash
 npx system-engineering-skill install                 # Qoder, Chinese
 npx system-engineering-skill install --target claude # Claude Code

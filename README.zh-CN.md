@@ -48,6 +48,8 @@ Agent 会读 [INSTALL.md](INSTALL.md)，识别自己对应的技能目录，备�
 
 ### npx（跨平台）
 
+> npm 包尚未发布。在此之前请用上面的**聊天安装**或下面的 git clone 方式。
+
 ```bash
 npx system-engineering-skill install                 # 装到 Qoder，中文
 npx system-engineering-skill install --target claude # 装到 Claude Code
