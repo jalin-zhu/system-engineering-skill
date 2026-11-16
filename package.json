@@ -1,0 +1,44 @@
+{
+  "name": "system-engineering-skill",
+  "version": "0.1.0",
+  "description": "Architecture-first engineering workflow for AI coding agents: write a project wiki before code, gate module changes through user review, and enforce integration contracts across subsystems.",
+  "keywords": [
+    "ai-agent",
+    "agent-skill",
+    "skill",
+    "claude-code",
+    "qoder",
+    "architecture",
+    "workflow",
+    "orchestration",
+    "prompt-engineering"
+  ],
+  "license": "MIT",
+  "author": "jalin-zhu",
+  "type": "module",
+  "bin": {
+    "system-engineering-skill": "bin/cli.mjs"
+  },
+  "files": [
+    "SKILL.md",
+    "SKILL.en.md",
+    "reference.md",
+    "project-wiki.md",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "scripts/install.sh",
+    "scripts/install.ps1"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalin-zhu/system-engineering-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jalin-zhu/system-engineering-skill/issues"
+  },
+  "homepage": "https://github.com/jalin-zhu/system-engineering-skill#readme"
+}
